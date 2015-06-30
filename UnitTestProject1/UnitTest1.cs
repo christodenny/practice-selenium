@@ -20,7 +20,7 @@ namespace UnitTestProject1
         public void Initialize()
         {
             //driver = new ChromeDriver(@"C:\Users\U6031204\Documents\chromedriver_win32\");
-            driver = new FirefoxDriver();// ChromeDriver(@".\packages\");
+            driver = new FirefoxDriver();
             driver.Manage().Timeouts().SetScriptTimeout(TimeSpan.FromSeconds(20));
             ngDriver = new NgWebDriver(driver);
         }
@@ -37,7 +37,7 @@ namespace UnitTestProject1
 
 
             var latestResult = ngDriver.FindElement(NgBy.Binding("latest")).Text;
-            Assert.AreEqual(latestResult, "3");
+            Assert.AreEqual(latestResult, "4");
 
             /*ngDriver.FindElement(By.Name("q")).SendKeys("Google");
             ngDriver.FindElement(By.Name("q")).SendKeys(Keys.Enter);*/
