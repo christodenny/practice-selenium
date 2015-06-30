@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.UI;
 using Protractor;
 
@@ -14,12 +15,13 @@ namespace UnitTestProject1
         IWebDriver driver;
         NgWebDriver ngDriver;
         const string URL = "http://juliemr.github.io/protractor-demo/";
-        ChromeDriver chrome;
+        //const string URL = "https://www.google.com";
         [TestInitialize]
         public void Initialize()
         {
-            driver = new ChromeDriver(@"C:\Users\U6031204\Documents\chromedriver_win32\");
-            driver.Manage().Timeouts().SetScriptTimeout(TimeSpan.FromSeconds(10));
+            //driver = new ChromeDriver(@"C:\Users\U6031204\Documents\chromedriver_win32\");
+            driver = new FirefoxDriver();// ChromeDriver(@".\packages\");
+            driver.Manage().Timeouts().SetScriptTimeout(TimeSpan.FromSeconds(20));
             ngDriver = new NgWebDriver(driver);
         }
 
@@ -36,13 +38,9 @@ namespace UnitTestProject1
 
             var latestResult = ngDriver.FindElement(NgBy.Binding("latest")).Text;
             Assert.AreEqual(latestResult, "3");
-            //latestResult.Should().Be("3");
 
-            //firefox = new FirefoxDriver();
-            /*chrome = new ChromeDriver(@"C:\Users\U6031204\Documents\chromedriver_win32\");
-            chrome.Navigate().GoToUrl("http://www.google.com/");
-            chrome.FindElement(By.Id("lst-ib")).SendKeys("Google");
-            chrome.FindElement(By.Id("lst-ib")).SendKeys(Keys.Enter);*/
+            /*ngDriver.FindElement(By.Name("q")).SendKeys("Google");
+            ngDriver.FindElement(By.Name("q")).SendKeys(Keys.Enter);*/
         }
 
         // This closes the driver down after the test has finished.
