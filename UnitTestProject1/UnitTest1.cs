@@ -37,7 +37,7 @@ namespace UnitTestProject1
 
 
             var latestResult = ngDriver.FindElement(NgBy.Binding("latest")).Text;
-            Assert.AreEqual(latestResult, "4");
+            Assert.AreEqual(latestResult, "6");
 
             /*ngDriver.FindElement(By.Name("q")).SendKeys("Google");
             ngDriver.FindElement(By.Name("q")).SendKeys(Keys.Enter);*/
