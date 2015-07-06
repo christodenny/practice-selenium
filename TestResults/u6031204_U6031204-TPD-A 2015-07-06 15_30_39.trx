@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="bec6b319-5dfa-4dd9-a3a4-d7cdc686d990" name="u6031204@U6031204-TPD-A 2015-07-06 15:30:39" runUser="TEN\u6031204" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="b6fa0fa9-3379-48ed-89bb-177df6a27199">
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="u6031204_U6031204-TPD-A 2015-07-06 15_30_39" />
+    <Properties />
+  </TestSettings>
+  <Times creation="2015-07-06T15:30:39.9985636-05:00" queuing="2015-07-06T15:30:40.2455772-05:00" start="2015-07-06T15:30:40.3345861-05:00" finish="2015-07-06T15:30:49.8052636-05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" passed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage=".\unittestproject1\bin\release\unittestproject1.dll" id="5b688acc-bf10-4c7e-4b60-69d8596bdd90">
+      <Execution id="a0ed1423-cd46-41c1-bedd-691f9ba6c881" />
+      <TestMethod codeBase="C:/Users/U6031204/Documents/Visual Studio 2013/Projects/UnitTestProject1/UnitTestProject1/bin/Release/UnitTestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTestProject1.UnitTest1, UnitTestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+    <UnitTest name="TestMethod2" storage=".\unittestproject1\bin\release\unittestproject1.dll" id="188858a4-7619-1290-c8c7-d24c31228c6f">
+      <Execution id="07ab6481-624c-4a2b-a6b1-866698a52198" />
+      <TestMethod codeBase="C:/Users/U6031204/Documents/Visual Studio 2013/Projects/UnitTestProject1/UnitTestProject1/bin/Release/UnitTestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTestProject1.UnitTest1, UnitTestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod2" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="5b688acc-bf10-4c7e-4b60-69d8596bdd90" executionId="a0ed1423-cd46-41c1-bedd-691f9ba6c881" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="188858a4-7619-1290-c8c7-d24c31228c6f" executionId="07ab6481-624c-4a2b-a6b1-866698a52198" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a0ed1423-cd46-41c1-bedd-691f9ba6c881" testId="5b688acc-bf10-4c7e-4b60-69d8596bdd90" testName="TestMethod1" computerName="U6031204-TPD-A" duration="00:00:04.4496573" startTime="2015-07-06T15:30:40.3545881-05:00" endTime="2015-07-06T15:30:44.9409467-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a0ed1423-cd46-41c1-bedd-691f9ba6c881">
+    </UnitTestResult>
+    <UnitTestResult executionId="07ab6481-624c-4a2b-a6b1-866698a52198" testId="188858a4-7619-1290-c8c7-d24c31228c6f" testName="TestMethod2" computerName="U6031204-TPD-A" duration="00:00:04.8263186" startTime="2015-07-06T15:30:44.9419468-05:00" endTime="2015-07-06T15:30:49.7702636-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="07ab6481-624c-4a2b-a6b1-866698a52198">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method UnitTestProject1.UnitTest1.TestMethod2 threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at UnitTestProject1.UnitTest1.TestMethod2() in c:\Users\U6031204\Documents\Visual Studio 2013\Projects\UnitTestProject1\UnitTestProject1\UnitTest1.cs:line 52
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
