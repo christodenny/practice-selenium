@@ -48,6 +48,7 @@ namespace UnitTestProject1
         {
             //Environment.SetEnvironmentVariable("Browser", "FIREFOX");
             String var = Environment.GetEnvironmentVariable("Browser");
+            Console.Write(var);
             if (!(var.Equals("FIREFOX") || var.Equals("IE") || var.Equals("CHROME")))
             {
                 Assert.AreEqual(3, 4);
