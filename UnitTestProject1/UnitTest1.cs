@@ -29,7 +29,7 @@ namespace UnitTestProject1
         public void TestMethod1()
         {
 
-            ngDriver.Url = URL; // navigate to URL
+            /*ngDriver.Url = URL; // navigate to URL
 
             ngDriver.FindElement(NgBy.Input("first")).SendKeys("1");
             ngDriver.FindElement(NgBy.Input("second")).SendKeys("2");
@@ -39,7 +39,7 @@ namespace UnitTestProject1
             var latestResult = ngDriver.FindElement(NgBy.Binding("latest")).Text;
             //Assert.AreEqual(latestResult, "3");
 
-            /*ngDriver.FindElement(By.Name("q")).SendKeys("Google");
+            ngDriver.FindElement(By.Name("q")).SendKeys("Google");
             ngDriver.FindElement(By.Name("q")).SendKeys(Keys.Enter);*/
         }
 
