@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Support.UI;
 using Protractor;
 
@@ -20,7 +21,19 @@ namespace UnitTestProject1
         public void Initialize()
         {
             //driver = new ChromeDriver(@"C:\Users\U6031204\Documents\chromedriver_win32\");
-            driver = new FirefoxDriver();
+            String browser = Environment.GetEnvironmentVariable("Browser");
+            switch (browser)
+            {
+                case "CHROME":
+                    driver = new ChromeDriver();
+                    break;
+                case "FIREFOX":
+                    driver = new FirefoxDriver();
+                    break;
+                case "IE":
+                    driver = new InternetExplorerDriver();
+                    break;
+            }
             driver.Manage().Timeouts().SetScriptTimeout(TimeSpan.FromSeconds(20));
             ngDriver = new NgWebDriver(driver);
         }
@@ -29,7 +42,9 @@ namespace UnitTestProject1
         public void TestMethod1()
         {
 
-            /*ngDriver.Url = URL; // navigate to URL
+            System.Diagnostics.Debug.Write("path "+System.IO.Directory.GetCurrentDirectory());
+
+            ngDriver.Url = URL; // navigate to URL
 
             ngDriver.FindElement(NgBy.Input("first")).SendKeys("1");
             ngDriver.FindElement(NgBy.Input("second")).SendKeys("2");
@@ -37,9 +52,9 @@ namespace UnitTestProject1
 
 
             var latestResult = ngDriver.FindElement(NgBy.Binding("latest")).Text;
-            //Assert.AreEqual(latestResult, "3");
+            Assert.AreEqual(latestResult, "3");
 
-            ngDriver.FindElement(By.Name("q")).SendKeys("Google");
+            /*ngDriver.FindElement(By.Name("q")).SendKeys("Google");
             ngDriver.FindElement(By.Name("q")).SendKeys(Keys.Enter);*/
         }
 
