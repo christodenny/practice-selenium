@@ -42,6 +42,22 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestMethod1()
         {
+            //Environment.SetEnvironmentVariable("Browser", "FIREFOX");
+            String var = Environment.GetEnvironmentVariable("Browser");
+            Console.Write(var);
+            if (!(var.Equals("FIREFOX") || var.Equals("IE") || var.Equals("CHROME")))
+            {
+                Assert.AreEqual(3, 4);
+            }
+            else
+            {
+                Assert.AreEqual(3, 3);
+            }
+        }
+
+        [TestMethod]
+        public void TestMethod2()
+        {
 
             System.Diagnostics.Debug.Write("path "+System.IO.Directory.GetCurrentDirectory());
 
@@ -58,22 +74,6 @@ namespace UnitTestProject1
 
             /*ngDriver.FindElement(By.Name("q")).SendKeys("Google");
             ngDriver.FindElement(By.Name("q")).SendKeys(Keys.Enter);*/
-        }
-
-        [TestMethod]
-        public void TestMethod2()
-        {
-            //Environment.SetEnvironmentVariable("Browser", "FIREFOX");
-            String var = Environment.GetEnvironmentVariable("Browser");
-            Console.Write(var);
-            if (!(var.Equals("FIREFOX") || var.Equals("IE") || var.Equals("CHROME")))
-            {
-                Assert.AreEqual(3, 4);
-            }
-            else
-            {
-                Assert.AreEqual(3, 3);
-            }
         }
 
         // This closes the driver down after the test has finished.
