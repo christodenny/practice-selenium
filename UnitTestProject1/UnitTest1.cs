@@ -22,7 +22,7 @@ namespace UnitTestProject1
         {
             //driver = new ChromeDriver(@"C:\Users\U6031204\Documents\chromedriver_win32\");
             String browser = Environment.GetEnvironmentVariable("Browser");
-            switch (browser)
+            /*switch (browser)
             {
                 case "CHROME":
                     driver = new ChromeDriver();
@@ -33,7 +33,8 @@ namespace UnitTestProject1
                 case "IE":
                     driver = new InternetExplorerDriver();
                     break;
-            }
+            }*/
+            driver = new ChromeDriver();
             driver.Manage().Timeouts().SetScriptTimeout(TimeSpan.FromSeconds(20));
             ngDriver = new NgWebDriver(driver);
         }
@@ -52,7 +53,8 @@ namespace UnitTestProject1
 
 
             var latestResult = ngDriver.FindElement(NgBy.Binding("latest")).Text;
-            Assert.AreEqual(latestResult, "4");
+            //Assert.AreEqual(latestResult, "4");
+            Assert.AreEqual(0, 1);
 
             /*ngDriver.FindElement(By.Name("q")).SendKeys("Google");
             ngDriver.FindElement(By.Name("q")).SendKeys(Keys.Enter);*/

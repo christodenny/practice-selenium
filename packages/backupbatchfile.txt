@@ -1,0 +1,5 @@
+if exist results.trx del results.trx
+.\packages\MSBuild.exe .\UnitTestProject1.sln /t:Clean
+.\packages\MSBuild.exe .\UnitTestProject1.sln /p:Configuration=Release
+.\packages\MSTest.exe /testcontainer:.\UnitTestProject1\bin\Release\UnitTestProject1.dll /resultsfile:results.trx
+if not %errorlevel% == 0 exit 1
