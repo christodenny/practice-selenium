@@ -70,7 +70,7 @@ namespace UnitTestProject1
 
 
             var latestResult = ngDriver.FindElement(NgBy.Binding("latest")).Text;
-            Assert.AreEqual(latestResult, "2");
+            Assert.AreEqual(latestResult, "3");
             //Assert.AreEqual(1, 1);
 
             /*ngDriver.FindElement(By.Name("q")).SendKeys("Google");
