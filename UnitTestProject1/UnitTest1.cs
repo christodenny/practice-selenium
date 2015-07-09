@@ -34,7 +34,7 @@ namespace UnitTestProject1
                     driver = new InternetExplorerDriver();
                     break;
             }
-            driver = new ChromeDriver();
+            driver = new InternetExplorerDriver();
             driver.Manage().Timeouts().SetScriptTimeout(TimeSpan.FromSeconds(20));
             ngDriver = new NgWebDriver(driver);
         }
