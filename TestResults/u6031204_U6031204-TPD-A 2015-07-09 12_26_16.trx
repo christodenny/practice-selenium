@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="8b04183a-4a90-46a4-86ea-815bda83aef9" name="u6031204@U6031204-TPD-A 2015-07-09 12:26:16" runUser="TEN\u6031204" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="757b25df-9620-49b3-b77c-9e92cebe39ab">
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="u6031204_U6031204-TPD-A 2015-07-09 12_26_16" />
+    <Properties />
+  </TestSettings>
+  <Times creation="2015-07-09T12:26:16.2897795-05:00" queuing="2015-07-09T12:26:16.6118117-05:00" start="2015-07-09T12:26:16.7018207-05:00" finish="2015-07-09T12:26:22.7882293-05:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage=".\unittestproject1\bin\release\unittestproject1.dll" id="5b688acc-bf10-4c7e-4b60-69d8596bdd90">
+      <Execution id="736367cd-ccbe-4ed0-91db-17d2d9d657c3" />
+      <TestMethod codeBase="C:/Users/U6031204/Documents/Visual Studio 2013/Projects/UnitTestProject1/UnitTestProject1/bin/Release/UnitTestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTestProject1.UnitTest1, UnitTestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+    <UnitTest name="TestMethod2" storage=".\unittestproject1\bin\release\unittestproject1.dll" id="188858a4-7619-1290-c8c7-d24c31228c6f">
+      <Execution id="fb319755-0cc3-4f57-84cd-35788fcead76" />
+      <TestMethod codeBase="C:/Users/U6031204/Documents/Visual Studio 2013/Projects/UnitTestProject1/UnitTestProject1/bin/Release/UnitTestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTestProject1.UnitTest1, UnitTestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod2" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="5b688acc-bf10-4c7e-4b60-69d8596bdd90" executionId="736367cd-ccbe-4ed0-91db-17d2d9d657c3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="188858a4-7619-1290-c8c7-d24c31228c6f" executionId="fb319755-0cc3-4f57-84cd-35788fcead76" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="736367cd-ccbe-4ed0-91db-17d2d9d657c3" testId="5b688acc-bf10-4c7e-4b60-69d8596bdd90" testName="TestMethod1" computerName="U6031204-TPD-A" duration="00:00:01.2981056" startTime="2015-07-09T12:26:16.7218227-05:00" endTime="2015-07-09T12:26:18.1598908-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="736367cd-ccbe-4ed0-91db-17d2d9d657c3">
+    </UnitTestResult>
+    <UnitTestResult executionId="fb319755-0cc3-4f57-84cd-35788fcead76" testId="188858a4-7619-1290-c8c7-d24c31228c6f" testName="TestMethod2" computerName="U6031204-TPD-A" duration="00:00:04.5900252" startTime="2015-07-09T12:26:18.1608908-05:00" endTime="2015-07-09T12:26:22.7532258-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fb319755-0cc3-4f57-84cd-35788fcead76">
+    </UnitTestResult>
+  </Results>
+</TestRun>

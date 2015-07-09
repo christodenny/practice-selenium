@@ -44,8 +44,8 @@ namespace UnitTestProject1
         {
             //Environment.SetEnvironmentVariable("Browser", "FIREFOX");
             String var = Environment.GetEnvironmentVariable("Browser");
-            Assert.AreEqual(null, null);
-            /*
+            //Assert.AreEqual(null, null);
+            
             if (!(var.Equals("FIREFOX") || var.Equals("IE") || var.Equals("CHROME")))
             {
                 Assert.AreEqual(3, 4);
@@ -53,7 +53,7 @@ namespace UnitTestProject1
             else
             {
                 Assert.AreEqual(3, 3);
-            }*/
+            }
         }
 
         [TestMethod]
@@ -70,8 +70,8 @@ namespace UnitTestProject1
 
 
             var latestResult = ngDriver.FindElement(NgBy.Binding("latest")).Text;
-            //Assert.AreEqual(latestResult, "4");
-            Assert.AreEqual(1, 1);
+            Assert.AreEqual(latestResult, "3");
+            //Assert.AreEqual(1, 1);
 
             /*ngDriver.FindElement(By.Name("q")).SendKeys("Google");
             ngDriver.FindElement(By.Name("q")).SendKeys(Keys.Enter);*/
